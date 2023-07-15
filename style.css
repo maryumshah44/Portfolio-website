@@ -1,0 +1,458 @@
+*{
+margin: 0;
+ padding:0;
+
+box-sizing: border-box;}
+    @font-face {font-family: 'Unbounded';
+    src: url('font.ttf');
+}
+ 
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:white;}
+::-webkit-scrollbar-thumb{background:white;}::-webkit-scrollbar-thumb:hover{background:#D16B86;}
+
+section{min-height: 100vh;
+ display: flex;
+
+}
+
+.loader{
+   position: fixed;
+   top:0; left:0; right:0; bottom: 0;
+   background-color: white;
+   z-index: 10000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.loader img{
+   width: 35rem;
+}
+
+img {border-radius:22px}
+
+#header{
+
+background-color:#F6F7F9;font-family: 'Unbounded';
+
+}
+#11{font-family: 'Unbounded';}
+
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-around;font-family: 'Unbounded';
+}
+
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #343e51;
+    text-decoration: none;
+    font-size: 18px;
+	 position: relative;
+}
+
+nav ul li a::after{
+     content: '';
+
+ height: 4px;
+ background: purple;
+ position: absolute;
+ left: 0;
+bottom:-6px; I
+transition:0.5s;
+}
+
+nav ul li a:hover::after{
+width: 100%;font-family: 'Unbounded';}
+
+.header-text{
+    margin-top: 10%;
+	margin-left:10%;
+    font-size: 30px;
+	color:#343e51;font-family: 'Unbounded';
+}
+ .header-text h1{
+    font-size: 60px;
+    margin-top: 20px;font-family: 'Unbounded';
+}
+ .header-text h1 span{
+ color: purple;font-family: 'Unbounded';}
+
+#about{
+
+   font-family: 'Unbounded';   display: flex; width:100%;
+ }
+
+
+ .about-col-1 img{
+    border-radius: 15px;
+}
+
+
+.sub-title{
+    font-size: 80px;
+    font-weight: 600;
+    color: #343e51;font-family: 'Unbounded';
+}
+	 
+.tab-titles{
+    display: flex;
+margin: 20px 0 40px;font-family: 'Unbounded';}
+
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+	text-decoration:none;font-family: 'Unbounded';}
+	
+
+ .ctn{
+    display: inline-block;
+    text-decoration: none;
+    color: #343e51;
+    border: 3px solid white;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+ }
+
+.ctn:hover{
+	border: 1px solid purple;
+background: purple;
+transition:1s;}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 350px;
+  text-align:center;
+  font-family: 'Unbounded';
+}
+
+
+
+ .container111{
+  display: flex;
+justify-content: center;
+font-family: 'Unbounded';
+margin-top:120px;
+padding:60px
+  
+}
+
+.container111 .card .face{
+  width:300px;
+  height: 200px;
+  font-family: 'Unbounded';
+text-align:center;
+  transition:.4s;
+  
+}
+
+.container111 .card .face.face1{
+  position: relative;
+  background:grey;
+  display: flex;
+  justify-content: center;
+font-family: 'Unbounded';
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container111 .card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+ inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+   
+}
+
+
+.container111 .card .face.face1 .content{
+  opacity: .5;
+  transition:  0.5s;
+  text-align: center;font-family: 'Unbounded';
+}
+
+.container111 .card:hover .face.face1 .content{
+  opacity: 5;
+ 
+}
+
+.container111 .card .face.face1 .content i{
+  font-size: 43;
+  color: white;
+
+   
+}
+
+.container111 .card .face.face1 .content h3{
+  font-size: 20;
+  color: white;
+  text-align: center;
+  
+
+}
+
+.container111 .card .face.face1 .content a{
+   transition: .5s;
+}
+
+.container111 .card .face.face2{
+   position: relative;font-family: 'Unbounded';
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.container111 .card:hover .face.face2{
+    transform: translateY(0);
+
+
+}
+
+.container111 .card .face.face2 .content p, a{
+  font-size: 10pt;
+  color:#333;
+}
+
+.container111 .card .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;font-family: 'Unbounded';
+}
+
+.container111 .card .face.face2 .content a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;font-family: 'Unbounded';
+}
+
+ 
+ 
+
+.btn {
+  color:hsla(344, 53%, 62%, 1);
+  font-size: 17;
+  font-weight:700;
+  border: 2px solid hsla(344, 53%, 62%, 1);
+  padding: 12px 28px;
+  border-radius: 10px;
+  transition: 1s;font-family: 'Unbounded';
+
+}
+
+
+.btn-primary,
+.btn-secondary:is(:hover, :focus-visible) {
+  background-color: hsla(344, 53%, 62%, 1);
+  color: white;font-family: 'Unbounded';
+}
+
+
+
+
+
+.services-list{
+     display: flex;
+     grid-gap:30px;
+margin-top: 20px;
+width:50%;font-family: 'Unbounded';
+
+}
+
+
+.services-list div{
+  
+   padding: 20px;
+   font-size: 13px;
+   font-weight: 300;
+border-right: 10px;font-family: 'Unbounded';
+}
+
+
+.site-footer
+{
+ width:100%;
+    height: 400px;font-family: 'Unbounded';
+    background-image: url("ft.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.social-icons li
+{
+  display:inline-block;
+
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:45px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+
+  color:#343e51;
+  background-color:#29aafe;
+}
+
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+
+
+.wrapper {
+  display: grid;
+  gap: 50px;
+  margin-block-end: 70px;
+  
+}
+
+.progress-list .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 4px;
+}
+
+
+.progress {
+  background-color: black;
+  height: 6px;
+  width: 97%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-fill { height: inherit; }
+
+.about-card { text-align: center;
+ }
+
+.about-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.about-card .card-title { margin-block: 16px 10px; }
+
+
+
+.project { border-block: 1px solid hsla(222, 23%, 71%, 0.2); }
+
+.project .title-wrapper { margin-block-end: 40px; }
+
+.project .btn { margin-block-start: 24px; }
+
+.project .grid-list { gap: 40px; }
+
+.project-card {
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card-1,
+.project-card-2,
+:is(.project-card-3, .project-card-4) .card-content { padding: 24px; }
+
+.project-card-1 { padding-block-end: 0; }
+
+.project :is(.project-card-3, .project-card-4) { gap: 0; }
+
+.project-card .card-tag {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-card .card-title { margin-block: 16px; }
+
+.project-card .card-text { margin-block-end: 20px; }
+
+.project-card .btn-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight:700;
+  transition:0.25s ease;
+}
+
+.project-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
+
+
+
+
